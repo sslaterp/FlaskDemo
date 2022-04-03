@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	environment {
 		VERSION = '1.0.0'
-		DOCKERHUB_CREDENTIALS = credentials('docker-sslaterpinnick-credentials')
+		DOCKERHUB_CREDENTIALS = credentials('Dockerhub')
 	}
 	stages {
 		stage('Build') {
